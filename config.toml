@@ -5,13 +5,15 @@ title = "Drone Trainer"
 theme = "hyde-hyde"
 
 ## Hugo Built-in Features
-# disqusShortname = "your-disqus-shortname"
-# googleAnalytics = "your-google-analytics-id"
+#disqusShortname = "your-disqus-shortname"
+#googleAnalytics = "your-google-analytics-id"
 enableRobotsTXT = true
 
 summarylength = 30
 
 paginate = 5
+
+publishDir = gh-pages
 
 ## Site Settings
 [params]
@@ -51,7 +53,7 @@ paginate = 5
     #stackoverflow = "<username>"
     #telegram = "<username>"
     email = "info@sciabarra.com"
-    # gravatar = "your-email@example.com"
+    gravatar = "michele@sciabarra.com"
 
 ## Main Menu
 [[menu.main]]
