@@ -1,0 +1,66 @@
+
+baseURL = "https://neuronix.cloud/"
+languageCode = "en"
+title = "Drone Trainer"
+theme = "hyde-hyde"
+
+## Hugo Built-in Features
+# disqusShortname = "your-disqus-shortname"
+# googleAnalytics = "your-google-analytics-id"
+enableRobotsTXT = true
+
+summarylength = 30
+
+paginate = 5
+
+## Site Settings
+[params]
+    author = "Michele Sciabarra"
+    title = "Neuronix"
+    description = "How to train your drones"
+    authorimage = "/img/neuronix_big.png"
+    dateformat = "Jan 2, 2006"
+
+    # sidebar, copyright & license
+    #copyright = "htr3n"
+    #license = "CC BY-SA 4.0"
+    #licenseURL = "https://creativecommons.org/licenses/by-sa/4.0"
+    #showBuiltWith = true
+
+    # https://highlightjs.org
+    highlightjs = true
+    highlightjsstyle = "github"
+    
+    # please choose either GraphComment or Disqus or Utterances
+    #GraphCommentId = "..."
+    #UtterancesRepo = "..." # https://utteranc.es/
+    #UtterancesIssueTerm = "..." # pathname, url, title, og:title
+    #UtterancesTheme = "..." # github-light or github-dark
+
+    # Table of contents
+    #toc = none, "hugo", or "tocbot"
+
+## Social Accounts
+[params.social]
+    github = "neuronix-cloud"
+    #instagram = "<username>"
+    #xing = "<username>"
+    linkedin = "feed/hashtag/neuronix/"
+    twitter = "NeuronixCloud"
+    #facebook = "<username>"
+    #stackoverflow = "<username>"
+    #telegram = "<username>"
+    email = "info@sciabarra.com"
+    # gravatar = "your-email@example.com"
+
+## Main Menu
+[[menu.main]]
+    name = "Start here"
+    weight = 100
+    identifier = "start"
+    url = "/posts/intro/how-to-train-your-drones/"
+[[menu.main]]
+    name = "Who we are"
+    identifier = "about"
+    weight = 300
+    url = "/about/"

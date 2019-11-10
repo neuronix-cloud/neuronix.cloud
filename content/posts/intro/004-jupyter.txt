@@ -1,0 +1,16 @@
+#Neuronix #DroneTrainer: usare Jupyter
+
+Per il nostro progetto DroneTrainer è utile poter usare lo strumento più diffuso per creare applicazioni di DeepLearning: il notebook Jupyter.
+
+Per questo motivo ci siamo ingegnati a modificare il programma di controllo SumoControl in modo da poterlo usare da Jupyter.
+
+Abbiamo quindi implementato un URL che permette di mandare comandi via http al drone e ritornare l'immagine corrente.
+
+A questo punto utilizzando il supporto per Widget interattivi di Jupyter abbiamo ottenuto il controllo del drone da un notebook, come mostrato in figura.
+
+Il codice del notebook si trova qui:
+
+https://github.com/neuronix-cloud/DroneTrainerNotebooks
+
+
+
