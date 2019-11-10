@@ -1,4 +1,4 @@
-git add *
+git add content
 git commit -m "$(date)" -a
 git push origin master
 hugo
