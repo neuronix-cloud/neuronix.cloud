@@ -1,0 +1,16 @@
+#Neuronix #DroneTrainer: collegarsi al drone.
+
+La prima sfida è stata connettere il server (basato sul Jetson Nano) al drone Jumping Sumo. Il server usa una variante del sistema operativo Linux Ubuntu. Il drone usa il sistema operativo ROS che è anche esso basato su Linux.
+
+Per connettersi al drone si usa il wifi. Il server Nano non ha il wifi, si collega alla rete via ethernet, quindi ci siamo procuranti un dongle wifi, che abbiamo inserito nel Nano. Fortunatamente il dongle è stato rilevato e configurato automaticamente quindi non abbiamo dovuto cercare drivers.
+
+Per connettersi al drone abbiamo configurato da linea di comando il wifi. Per i dettagli la procedura è descritta qui  https://wiki.archlinux.org/index.php/WPA_supplicant
+
+Abbiamo avuto un problema poichè avevamo due connessioni internet, una via ethernet e una via wifi. La connessione ad internet vera e propria è quella via ethernet non quella wifi, quindi abbiamo dovuto rimuovere manualmente la "route" al drone che è stata configurata automaticamente dal dhcp client.
+
+Il drone ha un indirizzo IP fisso che è 192.168.2.1. Il drone è completamente accessibilem, ed è un server Linux! Infatti è possibile fare telnet ad esso come mostrato in figura!
+
+
+![Telnet to Sumo](images/telnet-to-sumo.png)
+
+

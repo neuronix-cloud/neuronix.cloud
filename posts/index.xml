@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Drone Trainer</title>
+    <link>https://neuronix.cloud/posts/</link>
+    <description>Recent content in Posts on Drone Trainer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 09 Nov 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://neuronix.cloud/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Using Jupyter to Control the Drone</title>
+      <link>https://neuronix.cloud/posts/intro/using-jupyter/</link>
+      <pubDate>Sat, 09 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://neuronix.cloud/posts/intro/using-jupyter/</guid>
+      <description>For our DroneTrainer project, it is useful to be able to use the most widespread tool to create DeepLearning applications: the Jupyter notebook.
+For this reason we have modified the SumoControl control program so that it can be used by Jupyter.</description>
+    </item>
+    
+    <item>
+      <title>Web Interface to the Drone</title>
+      <link>https://neuronix.cloud/posts/intro/web-interface-to-the-drone/</link>
+      <pubDate>Fri, 08 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://neuronix.cloud/posts/intro/web-interface-to-the-drone/</guid>
+      <description>The Jumping Sumo drone manifacturer distributes an app that allows you to control it from your mobile, but we instead we prefer a web interface to it.
+For our project, we are interested in controlling it with an artificial intelligence that will be executed in our Jetson Nano edge server.</description>
+    </item>
+    
+    <item>
+      <title>Connecting to the Drone</title>
+      <link>https://neuronix.cloud/posts/intro/connecting-to-the-drone/</link>
+      <pubDate>Thu, 07 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://neuronix.cloud/posts/intro/connecting-to-the-drone/</guid>
+      <description>The first challenge was to connect the edge server, based on the Jetson Nano, to the Jumping Sumo drone. The server uses a variant of the Linux Ubuntu operating system. The drone uses the ROS operating system which is also based on Linux.</description>
+    </item>
+    
+    <item>
+      <title>How to train your drones</title>
+      <link>https://neuronix.cloud/posts/intro/how-to-train-your-drones/</link>
+      <pubDate>Wed, 06 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://neuronix.cloud/posts/intro/how-to-train-your-drones/</guid>
+      <description>Let&amp;rsquo;s start the educational project DroneTrainer which aims to introduce to a wide audience the topics of Deep Learning, Robotics and autonomous driving.
+  We have chosen equipment that is very cheap and accessible to everyone.</description>
+    </item>
+    
+  </channel>
+</rss>

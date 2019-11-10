@@ -1,0 +1,13 @@
+#Neuronix #DroneTrainer: telecontrollo del drone.
+
+Il nostro drone Jumping Sumo dispone di una app che permette di controllarlo dal cellulare. 
+
+Per il nostro progetto siamo interessati a controllarlo con una intelligenza artificiale che verrà eseguita nel nostro edge server Jetson Nano.
+
+Pertanto abbiamo utilizzato come base di partenza il progetto SumoControl su GitHub che fornisce una interfaccia web.
+
+Lo abbiamo forkato e modificato per aggiungere un configuratore per connettersi al drone e la possibilità di accesso remoto.
+
+Ecco quindi il link al nostro primo code drop: 
+
+https://github.com/neuronix-cloud/SumoControl
