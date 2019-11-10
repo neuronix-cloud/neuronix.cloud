@@ -13,7 +13,7 @@ summarylength = 30
 
 paginate = 5
 
-publishDir = gh-pages
+publishDir = "gh-pages"
 
 ## Site Settings
 [params]
@@ -53,7 +53,7 @@ publishDir = gh-pages
     #stackoverflow = "<username>"
     #telegram = "<username>"
     email = "info@sciabarra.com"
-    gravatar = "michele@sciabarra.com"
+    #gravatar = "michele@sciabarra.com"
 
 ## Main Menu
 [[menu.main]]

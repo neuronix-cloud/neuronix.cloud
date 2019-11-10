@@ -1,4 +1,6 @@
-# About
+---
+title: Who we are
+---
 
 Neuronix is the division of [Sciabarra.com](http://sciabarra.com) focused on Deep Learning and Computer Vision solutions. 
 
@@ -7,7 +9,7 @@ The DroneTrainer project is the brainchild of [Michele Sciabarra](https://linked
 
 ## Michele Sciabarra 
 
-{{< fig src="msciab-200x200.jpg" >}}
+{{< fig src="/msciab-200x200.jpg" >}}
 
 Michele takes care of the software to control drones, configure the servers and develop 3d models.
 
@@ -15,7 +17,7 @@ Michele's job when he is not playing with robots and GPUs for Neuronix, is runni
 
 ## Mirella Di Girolamo 
 
-{{< fig src="mirella-200x200.jpg" >}}
+{{< fig src="/mirella-200x200.jpg" >}}
 
 Mirella develops computer visions models in Python. She is usually pretty busy taking pictures and complaining there are not enough of them.
 
