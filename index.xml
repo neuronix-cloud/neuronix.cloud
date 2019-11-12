@@ -6,10 +6,20 @@
     <description>Recent content on Drone Trainer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 09 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 12 Nov 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://neuronix.cloud/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Spinning Drone</title>
+      <link>https://neuronix.cloud/posts/ball/spinning-drone/</link>
+      <pubDate>Tue, 12 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://neuronix.cloud/posts/ball/spinning-drone/</guid>
+      <description>Let&amp;rsquo;s start training our drone to explore the environment in search of objects.
+We choose a very simple object to search for, in this case a red ball. And we use an equally simple movement: turn around.</description>
+    </item>
     
     <item>
       <title>Using Jupyter to Control the Drone</title>

@@ -1,0 +1,15 @@
+#NeuronixDroneTrainer: raccogliere immagini
+
+
+
+Iniziamo ad istruire il nostro drone a esplorare l'ambiente alla ricerca di oggetti. 
+
+Scegliamo un oggetto molto semplice, in questo caso una palla rossa, e un movimento altrettanto semplice: girarsi intorno.
+
+Il primo step è quindi quello di fare girare il drone in tondo e raccogliere immagini dell'ambiente alla ricerca della palla rossa.
+
+Utilizzando l'URL di controllo del drone che abbiamo sviluppato la volta precedente, dobbiamo eseguire un ciclo in cui facciamo ruotare il drone e salvare l'immagine che vede ad ogni passo.
+
+In figura vediamo il risultato di cosa si ottiene ponendo la palla dietro il drone e facendolo girare per 360 gradi.
+
+
