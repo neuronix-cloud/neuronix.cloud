@@ -1,0 +1,13 @@
+#NeuronixDroneTrainer: simulare una stanza in 3d
+
+Continua il nostro progetto per istruire un drone a muoversi in una stannza.
+
+Vogliamo istruire il drone a trovare una palla in una stanza. Il nostro primissimo tentativo, raccogliendo immagini prese dal drone e costruendo un modello sopra, ha dato una precisione del 75%. Dobbiamo migliorare il nostro modello.
+
+Stiamo seguendo due strade. Da un lato stiamo ripulendo i dati. Stiamo guardando le immagini una ad una per eliminare situazioni con un pavimento non uniforme, e immagini con la palla che si vede solo parzialmente o si confonde conlo sfondo.
+
+Dall'altra stiamo gerando dati sintetici. Ci serve una collezione di immagini generate al computer che mostrano una palla in una stanza. Un progetto di grafica tridimensionale
+
+Abbiamo quindi preso il game engine Godot e iniziato a simulare una stanza con una palla dentro. Il codice del primo code drop del simulatore si trova qui:
+
+https://github.com/neuronix-cloud/room-simulator
