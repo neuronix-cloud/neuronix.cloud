@@ -17,21 +17,21 @@
     
     
 
-<title>Spinning Drone • Drone Trainer</title>
+<title>First Attempt at Modeling • Drone Trainer</title>
 
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Spinning Drone"/>
-<meta name="twitter:description" content="Let&rsquo;s start training our drone to explore the environment in search of objects.
-We choose a very simple object to search for, in this case a red ball. And we use an equally simple movement: turn around."/>
+<meta name="twitter:title" content="First Attempt at Modeling"/>
+<meta name="twitter:description" content="On our journey to teach a drone to move around a room, we taught it to go around and look around, collecting images.
+We then collected a few images and used them to instruct a model with TensorFlow."/>
 
-<meta property="og:title" content="Spinning Drone" />
-<meta property="og:description" content="Let&rsquo;s start training our drone to explore the environment in search of objects.
-We choose a very simple object to search for, in this case a red ball. And we use an equally simple movement: turn around." />
+<meta property="og:title" content="First Attempt at Modeling" />
+<meta property="og:description" content="On our journey to teach a drone to move around a room, we taught it to go around and look around, collecting images.
+We then collected a few images and used them to instruct a model with TensorFlow." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://neuronix.cloud/posts/ball/spinning-drone/" />
-<meta property="article:published_time" content="2019-11-12T00:00:00+00:00" />
-<meta property="article:modified_time" content="2019-11-12T00:00:00+00:00" /><meta property="og:site_name" content="Neuronix" />
+<meta property="og:url" content="https://neuronix.cloud/posts/ball/first-attempt-at-modeling/" />
+<meta property="article:published_time" content="2019-11-15T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-11-15T00:00:00+00:00" /><meta property="og:site_name" content="Neuronix" />
 
 
     
@@ -160,13 +160,13 @@ We choose a very simple object to search for, in this case a red ball. And we us
     
 <article>
   <header>
-    <h1>Spinning Drone</h1>
+    <h1>First Attempt at Modeling</h1>
     
     
 <div class="post__meta">
     
     
-      <i class="fas fa-calendar-alt"></i> Nov 12, 2019
+      <i class="fas fa-calendar-alt"></i> Nov 15, 2019
     
     
     
@@ -180,26 +180,19 @@ We choose a very simple object to search for, in this case a red ball. And we us
   
   
   <div class="post">
-    <p>Let&rsquo;s start training our drone to explore the environment in search of objects.</p>
+    <p>On our journey to teach a drone to move around a room, we taught it to go around and look around, collecting images.</p>
 
-<p>We choose a very simple object to search for, in this case a red ball. And we use an equally simple movement: turn around.</p>
+<p>We then collected a few images and used them to instruct a model with TensorFlow. Our model  can distinguish between images where a ball is present (ok) and images where it is not present (ko).</p>
 
-<p>The first step is therefore to let the drone spin, colleting images of the environment in search of the red ball.</p>
+<p>In our first experiment we collected only about 200 images and used a standard convolutional model, shown in the figure.</p>
 
-<p>We have in our <a href="https://github.com/neuronix-cloud/SumoControl">control software</a>  an URL in this format:</p>
+<p>The first attempt produces limited results but not completely discouraging: 75% accuracy in identifying the ball, but you can certainly do better. We will have to work on improving the dataset.</p>
 
-<pre><code>http://&lt;edge-server&gt;/move/&lt;direction&gt;/&lt;speed&gt;/&lt;time&gt;
-</code></pre>
-
-<p>This URL causes the drone to move in the <code>&lt;direction&gt;</code> (<code>forward</code> or <code>backward</code>) or rotate (<code>left</code> or <code>right</code>) at the given <code>&lt;speed&gt;</code> for the specified <code>&lt;time&gt;</code></p>
-
-<p>Using this URL  we can write a loop to rotate and save the image the drone sees at each step. This is what we did in the <a href="https://github.com/neuronix-cloud/DroneTrainerNotebooks/blob/master/SpinningDrone.ipynb">Spinning Drone</a> notebook.</p>
-
-<p>In the figure you can see the result of what we get placing the ball behind the drone and making it turn for 360 degrees.</p>
+<p>The notebook we used it is <a href="https://github.com/neuronix-cloud/DroneTrainerNotebooks/blob/master/FindBallModel.ipynb">here</a>.</p>
 
 <figure>
-    <img src="../005-spinning-drone.png"
-         alt="Spinning Drone"/> 
+    <img src="../006-first-attempt.png"
+         alt="First Attempt"/> 
 </figure>
 
 
@@ -208,14 +201,14 @@ We choose a very simple object to search for, in this case a red ball. And we us
 
 <div class="navigation navigation-single">
     
-    <a href="/posts/intro/using-jupyter/" class="navigation-prev">
+    <a href="/posts/ball/spinning-drone/" class="navigation-prev">
       <i aria-hidden="true" class="fa fa-chevron-left"></i>
-      <span class="navigation-tittle">Using Jupyter to Control the Drone</span>
+      <span class="navigation-tittle">Spinning Drone</span>
     </a>
     
     
-    <a href="/posts/ball/first-attempt-at-modeling/" class="navigation-next">
-      <span class="navigation-tittle">First Attempt at Modeling</span>
+    <a href="/posts/ball/room-simulator/" class="navigation-next">
+      <span class="navigation-tittle">Room Simulator</span>
       <i aria-hidden="true" class="fa fa-chevron-right"></i>
     </a>
     

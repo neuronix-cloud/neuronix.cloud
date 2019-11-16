@@ -6,10 +6,30 @@
     <description>Recent content in Posts on Drone Trainer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 12 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 16 Nov 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://neuronix.cloud/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Room Simulator</title>
+      <link>https://neuronix.cloud/posts/ball/room-simulator/</link>
+      <pubDate>Sat, 16 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://neuronix.cloud/posts/ball/room-simulator/</guid>
+      <description>Our project to instruct a drone to move in a room continues.
+We want to instruct the drone to find a ball in a room. Our very first attempt, collecting images taken from the drone and building a model above, gave 75% accuracy.</description>
+    </item>
+    
+    <item>
+      <title>First Attempt at Modeling</title>
+      <link>https://neuronix.cloud/posts/ball/first-attempt-at-modeling/</link>
+      <pubDate>Fri, 15 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://neuronix.cloud/posts/ball/first-attempt-at-modeling/</guid>
+      <description>On our journey to teach a drone to move around a room, we taught it to go around and look around, collecting images.
+We then collected a few images and used them to instruct a model with TensorFlow.</description>
+    </item>
     
     <item>
       <title>Spinning Drone</title>

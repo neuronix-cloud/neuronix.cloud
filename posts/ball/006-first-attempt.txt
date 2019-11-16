@@ -1,0 +1,9 @@
+#NeuronixDroneTrainer: primo tentativo di istruire il drone
+
+Nel nostro percorso per insegnare a un drone a muoversi in una stanza, gli abbiamo insegnato a girare in tondo e guardarsi intorno, raccogliendo immagini.
+
+Abbiamo quindi raccolto un po' di immagini e le abbiamo usate per istruire un modello con TensorFlow in grado di distinguere immagini dove è presente una palla (ok) e immagini dove non è presente (ko).
+
+Nel nostro primo esperimento abbiamo raccolto solo circa 200 immagini e abbiamo usato un modello convoluzionale standard, mostrato in figura.
+
+Il primo tentativo produce risultati limitati ma non del tutto scoraggianti: precisione del 75% nell'individuare la palla, ma si può senz'altro far di meglio. Dovremo lavorare a migliorare il dataset.
