@@ -1,0 +1,14 @@
+#NeuronixDroneTrainer: generare modelli 3D con OpenSCAD
+
+Dopo aver sperimentato per un po' con Godot, siamo giunti alla conclusione che non è appropriato per le nostre necessità.
+
+Il nostro obiettivo è creare facilmente un modello 3D e generare immagini per addestrare i nostri modelli di Deep Learning.
+
+Godot ha dimostrato di richiedere molta conoscenza nella progettazione grafica ed è orientato verso applicazioni interattive. Qualcosa di semplice come esportare uno screenshot si è rivelato complicato.
+
+Dato che siamo sviluppatori e dobbiamo essere in grado di creare scene 3D, ma non vogliamo occuparci della progettazione grafica, poiché non è il nostro obiettivo, abbiamo cercato uno strumento in grado di generare proceduralmente modelli 3D.
+
+Ovviamente potremmo semplicemente scrivere codice che crea i modelli in qualsiasi linguaggio di programmazione che supporti le librerie 3D. Il problema è trovare lo strumento più adatto ai nostri obiettivi per ottimizzare lo sviluppo.
+
+Fortunatamente, esiste uno strumento adatto alle nostre esigenze: OpenSCAD. È un linguaggio specifico del dominio che consente di creare modelli 3D utilizzando un linguaggio semplice orientato alla creazione di modelli e un IDE che consente di testare gli script in modo rapido e semplice.
+

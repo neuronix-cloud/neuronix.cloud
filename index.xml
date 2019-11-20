@@ -6,10 +6,20 @@
     <description>Recent content on Drone Trainer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 16 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 20 Nov 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://neuronix.cloud/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Room Simulator with OpenSCAD</title>
+      <link>https://neuronix.cloud/posts/ball/room-simulator-openscad/</link>
+      <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://neuronix.cloud/posts/ball/room-simulator-openscad/</guid>
+      <description>After experimenting for a while with Godot, we reached the conclusion that it is not appropriate for our needs.
+Our goal is to easily generate 3D models and manipulate them in code, in order to generate and export images to train our models.</description>
+    </item>
     
     <item>
       <title>Room Simulator</title>

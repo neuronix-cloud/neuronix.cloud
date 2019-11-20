@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
     
+    
+
+
     <head>
     <link href="https://gmpg.org/xfn/11" rel="profile">
     <meta charset="utf-8">
@@ -14,19 +17,21 @@
     
     
 
-<title>Posts • Drone Trainer</title>
+<title>Room Simulator with OpenSCAD • Drone Trainer</title>
 
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Posts"/>
-<meta name="twitter:description" content="How to train your drones"/>
+<meta name="twitter:title" content="Room Simulator with OpenSCAD"/>
+<meta name="twitter:description" content="After experimenting for a while with Godot, we reached the conclusion that it is not appropriate for our needs.
+Our goal is to easily generate 3D models and manipulate them in code, in order to generate and export images to train our models."/>
 
-<meta property="og:title" content="Posts" />
-<meta property="og:description" content="How to train your drones" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://neuronix.cloud/posts/" />
-
-<meta property="og:updated_time" content="2019-11-20T00:00:00+00:00" /><meta property="og:site_name" content="Neuronix" />
+<meta property="og:title" content="Room Simulator with OpenSCAD" />
+<meta property="og:description" content="After experimenting for a while with Godot, we reached the conclusion that it is not appropriate for our needs.
+Our goal is to easily generate 3D models and manipulate them in code, in order to generate and export images to train our models." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://neuronix.cloud/posts/ball/room-simulator-openscad/" />
+<meta property="article:published_time" content="2019-11-20T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-11-20T00:00:00+00:00" /><meta property="og:site_name" content="Neuronix" />
 
 
     
@@ -60,8 +65,7 @@
     <link rel="icon" type="image/png" href="/favicon/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96">
 
-    <link rel="alternate" type="application/rss+xml" href="https://neuronix.cloud/posts/index.xml" title="Drone Trainer" />
-
+    
     
 
 </head>
@@ -153,91 +157,92 @@
 
         <div class="content container">
             
-    <span class="section__title">Posts</span>
-<ul class="posts">
     
-        
-<li>
-  <span class="list__title--small">
-    <a href="/posts/ball/room-simulator-openscad/" >Room Simulator with OpenSCAD</a>
-      
-      <time class="pull-right hidden-tablet">Nov 20, 2019</time>
-      
-  </span>
-</li>
-
-<li>
-  <span class="list__title--small">
-    <a href="/posts/ball/room-simulator/" >Room Simulator</a>
-      
-      <time class="pull-right hidden-tablet">Nov 16, 2019</time>
-      
-  </span>
-</li>
-
-<li>
-  <span class="list__title--small">
-    <a href="/posts/ball/first-attempt-at-modeling/" >First Attempt at Modeling</a>
-      
-      <time class="pull-right hidden-tablet">Nov 15, 2019</time>
-      
-  </span>
-</li>
-
-<li>
-  <span class="list__title--small">
-    <a href="/posts/ball/spinning-drone/" >Spinning Drone</a>
-      
-      <time class="pull-right hidden-tablet">Nov 12, 2019</time>
-      
-  </span>
-</li>
-
-<li>
-  <span class="list__title--small">
-    <a href="/posts/intro/using-jupyter/" >Using Jupyter to Control the Drone</a>
-      
-      <time class="pull-right hidden-tablet">Nov 9, 2019</time>
-      
-  </span>
-</li>
-
-<li>
-  <span class="list__title--small">
-    <a href="/posts/intro/web-interface-to-the-drone/" >Web Interface to the Drone</a>
-      
-      <time class="pull-right hidden-tablet">Nov 8, 2019</time>
-      
-  </span>
-</li>
-
-<li>
-  <span class="list__title--small">
-    <a href="/posts/intro/connecting-to-the-drone/" >Connecting to the Drone</a>
-      
-      <time class="pull-right hidden-tablet">Nov 7, 2019</time>
-      
-  </span>
-</li>
-
-<li>
-  <span class="list__title--small">
-    <a href="/posts/intro/how-to-train-your-drones/" >How to train your drones</a>
-      
-      <time class="pull-right hidden-tablet">Nov 6, 2019</time>
-      
-  </span>
-</li>
-
-
+<article>
+  <header>
+    <h1>Room Simulator with OpenSCAD</h1>
     
-</ul>
+    
+<div class="post__meta">
+    
+    
+      <i class="fas fa-calendar-alt"></i> Nov 20, 2019
+    
+    
+    
+    
+    
+    <br/>
+</div>
+
+
+  </header>
+  
+  
+  <div class="post">
+    <p>After experimenting for a while with Godot, we reached the conclusion that it is not appropriate for our needs.</p>
+
+<p>Our goal is to easily generate 3D models and manipulate them in code, in order to generate and export images to train our models.</p>
+
+<p>Godot proved to require a lot of knowledge in graphic design and it is geared towards interactive applications. Something as easy as to export a screenshot proved difficult.</p>
+
+<p>Since we are developers, and we need to be able to create 3D scenes, but we do not want to deal with graphic design since it is not our goal, we looked for a tool that can generate 3D models procedurally.</p>
+
+<p>We could of course just write code that creates the models in any programing language supporting 3D libraries. The problem is to find the tool that is more fit to our goals and minimize the efforts.</p>
+
+<p>Luckily, there is one tool that fits our requirements: OpenSCAD. It is a domain-specific language that allows to create 3D models using a simple language geared to create models and an IDE that allows to test scripts quickly and easily.</p>
+
+<figure>
+    <img src="../008-room-simulator-openscad.png"
+         alt="OpenSCAD"/> 
+</figure>
+
+
+  </div>
+  
+
+<div class="navigation navigation-single">
+    
+    <a href="/posts/ball/room-simulator/" class="navigation-prev">
+      <i aria-hidden="true" class="fa fa-chevron-left"></i>
+      <span class="navigation-tittle">Room Simulator</span>
+    </a>
+    
+    
+</div>
+
+
+  
+
+  
+    
+
+
+</article>
 
 
         </div>
         
     
+
 <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+
+
+    
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+        
+    
+    <script type="text/javascript">
+        
+        hljs.initHighlightingOnLoad();
+    </script>
+    
+
+
+
+
+    
 
 
 
