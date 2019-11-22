@@ -1,0 +1,20 @@
+#NeuronixDroneTrainer: usare Blender e Python per generare immagini
+
+
+
+Il nostro progetto Drone Trainer è un vero "lavori in corso". Il nostro problema attuale è quello di generare immagini sintetiche in 3D per istruire il nostro drone.
+
+
+
+Abbiamo provato diverse possibilità per generare il modello. Dopo aver sperimentato Godot, OpenSCAD e librerie grafiche come Pyrender e Panda3D, abbiamo deciso di provare anche una soluzione che avevamo categoricamente escluso all'inizio, perché pensavamo fosse troppo complessa: Blender.
+
+
+
+Con nostra sorpresa invece,  con l'aiuto di dei corsi di Udemy e video su YouTube, siamo riusciti a costruire rapidamente il modello che ci serviva e anche ad automatizzare il rendering con degli script Python! 
+
+Automatizzare è essenziale perché dobbiamo poter generare un insieme di immagini in varie prospettive in modo da avere un set comprensivo per istruire il modello Deep Learning.
+
+Nel frattempo abbiamo anche pulito il dataset di immagini raccolte dal drone  e migliorato i risultati fino all'80%. Ma questo ve lo racconteremo la prossima volta.
+
+
+

@@ -6,10 +6,20 @@
     <description>Recent content on Drone Trainer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 20 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 22 Nov 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://neuronix.cloud/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Use Blender and Python to generate images</title>
+      <link>https://neuronix.cloud/posts/ball/ball-in-room-blender/</link>
+      <pubDate>Fri, 22 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://neuronix.cloud/posts/ball/ball-in-room-blender/</guid>
+      <description>Our Drone Trainer project is a true &amp;ldquo;work in progress&amp;rdquo;. Our current problem is generating synthetic images in 3D to train our drone.
+We tried several possibilities to generate the model.</description>
+    </item>
     
     <item>
       <title>Room Simulator with OpenSCAD</title>
