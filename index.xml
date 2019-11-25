@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>Tuning the 3d model</title>
+      <link>https://neuronix.cloud/posts/ball/tuning-the-3d-model/</link>
+      <pubDate>Fri, 22 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://neuronix.cloud/posts/ball/tuning-the-3d-model/</guid>
+      <description>We picked Blender as the tool to generate synthetic images to train our models. Our idea is generating images to train the models, as handpicking them is pretty time consuming.</description>
+    </item>
+    
+    <item>
       <title>Use Blender and Python to generate images</title>
       <link>https://neuronix.cloud/posts/ball/ball-in-room-blender/</link>
       <pubDate>Fri, 22 Nov 2019 00:00:00 +0000</pubDate>

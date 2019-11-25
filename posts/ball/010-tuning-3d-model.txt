@@ -1,0 +1,11 @@
+#NeuronixDroneTrainer: mettere a punto il modello 3d
+
+Abbiamo scelto Blender come strumento per generare immagini sintetiche per addestrare i nostri modelli. La nostra idea è quella di generare immagini per addestrare i modelli, dato che selezionarli a mano richiede molto tempo.
+
+Quindi il problema è ora un problema di modellazione 3d. Utilizzando Blender la creazione di un tale modello è abbastanza semplice. In realtà abbiamo semplificato il lavoro utilizzando un modello gratuito di interni, che abbiamo trovato su Internet. Quindi abbiamo aggiunto una texture del pavimento e una palla rossa, ed eccolo qui.
+
+La parte più fastidiosa è stata mettere a punto il modello per renderlo il più simile possibile a ciò che vede il nostro Drone. Quindi abbiamo trascorso del tempo a misurare gli oggetti fisici che vogliamo simulare.
+
+Inoltre abbiamo appreso i dettagli delle fotocamere, come il punto focale e funzioni simili per ottimizzare il modello. Nell'istantanea sotto puoi vedere alcune immagini del mondo reale rispetto a quelle generate.
+
+Pensiamo che ora il modello 3d sia abbastanza buono per produrre le immagini di cui abbiamo bisogno, quindi non vediamo l'ora di provare effettivamente a istruire un modello Deep Learning con esse.
