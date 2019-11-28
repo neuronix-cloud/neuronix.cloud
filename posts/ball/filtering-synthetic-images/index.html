@@ -17,19 +17,21 @@
     
     
 
-<title>Tuning the 3d model • Drone Trainer</title>
+<title>Filtering Synthetic Images • Drone Trainer</title>
 
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Tuning the 3d model"/>
-<meta name="twitter:description" content="We picked Blender as the tool to generate synthetic images to train our models. Our idea is generating images to train the models, as handpicking them is pretty time consuming."/>
+<meta name="twitter:title" content="Filtering Synthetic Images"/>
+<meta name="twitter:description" content="To train a model for our drone in search of a red ball in a room, we generated synthetic images.
+It was an interesting adventure, using Blender. First we built the 3D model of a ball in a room."/>
 
-<meta property="og:title" content="Tuning the 3d model" />
-<meta property="og:description" content="We picked Blender as the tool to generate synthetic images to train our models. Our idea is generating images to train the models, as handpicking them is pretty time consuming." />
+<meta property="og:title" content="Filtering Synthetic Images" />
+<meta property="og:description" content="To train a model for our drone in search of a red ball in a room, we generated synthetic images.
+It was an interesting adventure, using Blender. First we built the 3D model of a ball in a room." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://neuronix.cloud/posts/ball/tuning-the-3d-model/" />
-<meta property="article:published_time" content="2019-11-22T00:00:00+00:00" />
-<meta property="article:modified_time" content="2019-11-22T00:00:00+00:00" /><meta property="og:site_name" content="Neuronix" />
+<meta property="og:url" content="https://neuronix.cloud/posts/ball/filtering-synthetic-images/" />
+<meta property="article:published_time" content="2019-11-28T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-11-28T00:00:00+00:00" /><meta property="og:site_name" content="Neuronix" />
 
 
     
@@ -158,13 +160,13 @@
     
 <article>
   <header>
-    <h1>Tuning the 3d model</h1>
+    <h1>Filtering Synthetic Images</h1>
     
     
 <div class="post__meta">
     
     
-      <i class="fas fa-calendar-alt"></i> Nov 22, 2019
+      <i class="fas fa-calendar-alt"></i> Nov 28, 2019
     
     
     
@@ -178,19 +180,21 @@
   
   
   <div class="post">
-    <p>We picked Blender as the tool to generate synthetic images to train our models. Our idea is  generating images to train the models, as handpicking them is pretty time consuming.</p>
+    <p>To train a model for our drone in search of a red ball in a room, we generated synthetic images.</p>
 
-<p>So the problem is now a 3d modelling problem. Using Blender the creation of such a  model is pretty easy. Actually we made the work easier using a free model of an interior, that we found on the Internet. Then we added a texture of the floor and a red ball, and here is it.</p>
+<p>It was an interesting adventure, using Blender. First we built the 3D model of a ball in a room. Then we started moving around the ball and rotating the camera in the model. Using a Python script we generated about 2000 images of the room, with and without the ball.</p>
 
-<p>The most annoying part was to tune the model to make it as similar as possible to what our Drone sees. So we spent time taking measurements of the physical objects we want to simulate.</p>
+<p>At this point we got some problems on the generated images: not all images with the rendered ball actually showed it. Actually, the ball could be located in the scene in a position where it was present but not visible.</p>
 
-<p>Also we learned details of cameras, like focal point and similar features in order to tune the model. In the snapshot below you can see some real world pictures compared with the generated ones.</p>
+<p>We tried many solutions to exclude these images with a false positive. In the end the best way was to compare  rendered images &ldquo;with the ball&rdquo; and  rendered images &ldquo;without the ball&rdquo;. If the images &ldquo;with&rdquo; and &ldquo;without&rdquo; were the same &hellip; the ball was not visible and we discarded it.</p>
 
-<p>We think now the 3d model is good enough to produce the images we need, so we are looking forward to actually try to train a deep learning model with them.</p>
+<p>Another tuning, needed but simpler, was to eliminate duplicates.</p>
+
+<p>In the end we got a dataset with 766 images &ldquo;with ball&rdquo; and 432 &ldquo;without ball&rdquo;. The generation code and the dataset can be found <a href="https://github.com/neuronix-cloud/room-simulator/">here</a></p>
 
 <figure>
-    <img src="../010-tuning-3d-model.png"
-         alt="Tuning the 3D model"/> 
+    <img src="../011-filtering-images.png"
+         alt="Filtering Images"/> 
 </figure>
 
 
@@ -199,16 +203,11 @@
 
 <div class="navigation navigation-single">
     
-    <a href="/posts/ball/ball-in-room-blender/" class="navigation-prev">
+    <a href="/posts/ball/tuning-the-3d-model/" class="navigation-prev">
       <i aria-hidden="true" class="fa fa-chevron-left"></i>
-      <span class="navigation-tittle">Use Blender and Python to generate images</span>
+      <span class="navigation-tittle">Tuning the 3d model</span>
     </a>
     
-    
-    <a href="/posts/ball/filtering-synthetic-images/" class="navigation-next">
-      <span class="navigation-tittle">Filtering Synthetic Images</span>
-      <i aria-hidden="true" class="fa fa-chevron-right"></i>
-    </a>
     
 </div>
 
