@@ -1,0 +1,15 @@
+#NeuronixDroneTrainer: filtrare le immagini sintetiche
+
+Per istruire un modello per il nostro drone alla ricerca di una palla rossa in una stanza, abbiamo generato delle immagini sintetiche.
+
+È stata una avventura interessante,  usando Blender. Per prima cosa abbiamo costruito il modello 3D di una palla in una stanza. Poi ci siamo messi a spostare la palla e a ruotare la telecamera nel modello. Con uno script Python abbiamo generato circa 2000 immagini della stanza, con e senza la palla.
+
+A questo punto sono sorti un pò di problemi sulle immagini generate:  non tutte le immagini con la palla renderizzata effettivamente la mostravano. Infatti poteva travarsi nella scena in una posizione in cui era presente ma non visibile.
+
+Abbiamo provato molte soluzioni per escludere queste immagini. Alla fine la migliore è stata quella di confrontare l'immagine renderizzata "con palla" e l'immagine renderizzata "senza palla". Se le immagini "con" e "senza"erano uguali... la palla non era visibile e la scartavamo.
+
+Altro tuning necessario, ma più semplice, è stato quello di eliminare i duplicati.
+
+Alla fine abbiamo ottenuto un dataset con 766 immagini "con palla"  e 432 "senza palla". Il codice di generazione e il dataset si trovano qui:
+
+https://github.com/neuronix-cloud/room-simulator/
